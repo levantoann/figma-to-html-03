@@ -171,7 +171,7 @@ a {
   background: #fff;
 }
 
-.section--heading {
+.section-heading {
   color: #10375c;
   font-size: 5rem;
   font-weight: 600;
@@ -179,7 +179,7 @@ a {
   letter-spacing: -1px;
 }
 
-.section--desc {
+.section-desc {
   color: #575f66;
   font-size: 1.8rem;
   font-style: normal;
@@ -260,4 +260,59 @@ a {
 
 .service__btn {
   margin-top: 55px;
+}
+
+.work {
+  padding: 100px 0;
+  background: #f6fbff;
+}
+
+.work__desc {
+  width: 468px;
+}
+
+.work__list {
+  margin-top: 86px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+.work-item {
+  padding: 43px;
+  border-radius: 4px;
+  background: #fff;
+  border: 16px solid #eaf6ff;
+  transition: 0.25s;
+}
+
+.work-item:hover {
+  border-color: #2e80ce;
+  transform: translateY(-16px);
+}
+
+.work-item__heading {
+  color: #10375c;
+  margin-top: 18px;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38; /* 138.462% */
+}
+
+.work-item__desc {
+  margin-top: 28px;
+  color: #575f66;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+
+.work-item__more {
+  display: inline-block;
+  margin-top: 28px;
+  color: #575f66;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+
+.work-item__more:hover {
+  color: #2e80ce;
 }
