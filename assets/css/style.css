@@ -180,11 +180,40 @@ a {
 }
 
 .section-desc {
+  margin-top: 18px;
   color: #575f66;
   font-size: 1.8rem;
-  font-style: normal;
   font-weight: 300;
   line-height: 1.67; /* 166.667% */
+}
+
+.control {
+  display: flex;
+  column-gap: 18px;
+  align-items: center;
+}
+
+.control__btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #575f66;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.control-icon--next {
+  rotate: 180deg;
+}
+
+.control__btn:hover {
+  background: #2e80ce;
+  border-color: #2e80ce;
+  color: #fff;
 }
 
 .service__heading,
@@ -262,6 +291,7 @@ a {
   margin-top: 55px;
 }
 
+/* ====================work==================== */
 .work {
   padding: 100px 0;
   background: #f6fbff;
@@ -315,4 +345,111 @@ a {
 
 .work-item__more:hover {
   color: #2e80ce;
+}
+
+/* ====================service==================== */
+.about {
+  margin-top: 85px;
+  padding: 85px 0 206px;
+}
+
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__media {
+  width: 49%;
+}
+
+.about-content {
+  width: 40%;
+}
+
+.about__img {
+  position: relative;
+}
+
+.about__img--big {
+  display: flex;
+  object-fit: cover;
+  width: 512px;
+  height: 370px;
+  border-radius: 6px;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.about__img--small {
+  object-fit: cover;
+  width: 332px;
+  top: 110px;
+  left: 238px;
+  height: 370px;
+  border-radius: 6px;
+  position: absolute;
+}
+
+.about-content__btn {
+  margin-top: 38px;
+}
+
+/* =======================team=================== */
+
+.team {
+  padding: 85px 0;
+}
+
+.team-header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.team__cta {
+  margin-top: 38px;
+}
+.team__list {
+  margin-top: 70px;
+  column-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.team-item__thumb {
+  height: 290px;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s;
+}
+.team-item__img-bg {
+  border-radius: 6px;
+  background: #eaf6ff;
+  padding-top: 28px;
+  overflow: hidden;
+}
+
+.team-item__name {
+  margin-top: 12px;
+  color: #10375c;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.team-item__desc {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+
+.team-item:hover .team-item__thumb {
+  transform: scale(1.1);
+}
+
+.team__control {
+  margin-top: 38px;
+  justify-content: center;
 }
